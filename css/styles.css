@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+/* variables  */
+
+    /* pallete  */
+    :root {
+        --primary: #021F3B;
+        --secondary: #D9A745;
+        --dark: #12100E;
+        --medium: #D9D9D9;
+        --light: #FFFFFF;
+    }
+
+    /* font sizes  */
+    :root {
+        --heading1: 4.8em;
+        --heading2: 3.6em;
+        --heading3_4: 3.2em;
+        --heading5: 2.8em;
+        --heading6: 2em;
+        --links: 2em;
+        --text: 1.6em;
+        --caption: 1.2em;  
+    }
+
+    /* font weight  */
+    :root {
+        --heading11: 800;
+        --heading22: 700;
+        --heading3_4_5_6: 500;
+        --linkss: 600;
+        --textt: 400;
+        --captionn: 400;
+    }
+
+    /* spacing  */
+    :root {
+        --spacing1: 12rem;
+        --spacing2: 8rem;
+        --spacing3: 5rem;
+        --spacing4: 3.2rem;
+        --spacing5: 1.6rem;
+        --spacing6: 0.8rem;
+    }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.indexbody {
+    background-color: var(--primary);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+li { 
+    font-weight: var(--textt);
+    font-size: var(--text);
+}
+
+/* HEADER */  
+
+header {
+    background-color: var(--primary);
+    padding: 2rem;
+    max-height: 6.4rem;
+}
+
+li a {
+    text-decoration: none;
+    color: var(--light);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mtfinance {
+    font-weight: var(--linkss);
+    font-size: var(--links);
+    color: var(--light);
+}
+
+.navbar .navbarmenu {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navbaritem {
+    font-weight: var(--linkss);
+    font-size: var(--text);
+    list-style-type: none;
+}
+
+.navbarlink {
+    text-decoration: none;
+    padding: var(--spacing6);
+}
+
+.navbarlink:hover {
+    background-color: var(--light);
+    color: var(--secondary);
+}
+
+.currentpage {
+    color: var(--secondary);
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .navbar .navbarmenu {
+        justify-content: center;
+    }
+}
+
+
+/* MAIN CONTENT */
+
+.backgroundimage {
+    background-image: url(../img/fotoindexbackground.jpg);
+    height: 55rem;
+    background-size: cover;
+    max-width: 100%;
+}
+
+.contactanos { 
+    background-color: var(--secondary);
+    color: var(--light);
+    border-radius: 2em;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    text-decoration: none;
+    padding: 0.8em 1.5em 0.8em 1.5em;
+}
+
+h1 {
+    font-size: var(--heading1);
+    font-weight: var(--heading11);
+    color: var(--light);
+    padding-top: var(--spacing1);
+    padding-bottom: var(--spacing4);
+}
+
+.backgroundimage h6 {
+    padding-bottom: var(--spacing4);
+}
+
+.pagetitle {
+    font-size: var(--heading2);
+    font-weight: var(--heading22);
+    color: var(--dark);
+    padding-top: var(--spacing3);
+    padding-bottom: var(--spacing5);
+}
+
+.indexheading {
+    color: var(--light);
+    font-size: var(--heading2);
+    font-weight: var(--heading22);
+    display: flex;
+    margin-top: var(--spacing2);
+    margin-bottom: var(--spacing5);
+    justify-content: center;
+}
+
+h5 {
+    font-weight: var(--heading3_4_5_6);
+    font-size: var(--heading5); 
+}
+
+h6 {
+    font-weight: var(--heading3_4_5_6);
+    font-size: var(--heading6);
+    color: var(--light);
+}
+
+.whitetext {
+    color: var(--light);
+    display: flex;
+    margin-bottom: var(--spacing3);
+    justify-content: center;
+}
+
+p {
+    font-size: var(--text);
+    font-weight: var(--textt);
+    color: var(--dark);
+}
+
+.indexservicios {
+    display: block;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.linkservicios { 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.serviciosblanco { 
+    background-color: var(--light);
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    text-align: center;
+    width: 20rem;
+    height: 12rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin-left: var(--spacing5);
+    margin-right: var(--spacing5);
+    margin-bottom: var(--spacing2);
+}
+
+.serviciosdorado { 
+    background-color: var(--secondary);
+    color: var(--light);
+    text-decoration: none;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    text-align: center;
+    width: 20rem;
+    height: 12rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin-left: var(--spacing5);
+    margin-right: var(--spacing5);
+    margin-bottom: var(--spacing2);
+}
+
+.iconoservicios {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    align-items: center;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+
+/* FOOTER */ 
+
+.footer__contact {
+    background-color: var(--medium);
+    color: var(--dark);
+    padding-bottom: var(--spacing4);
+}
+
+.contactinfo {
+    display: flex;
+    align-items: center;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    color: var(--dark);
+    padding-bottom: var(--spacing5);
+    padding-top: var(--spacing5);
+}
+
+.contactanostitle {
+    color: var(--dark);
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    padding-top: var(--spacing4);
+    padding-bottom: var(--spacing5);
+}
+
+.contacticon {
+    height: 2rem;
+    width: 2.2rem;
+    margin-right: var(--spacing6);
+}
+
+.footer__caption {
+    background-color: var(--dark);
+}
+
+.copyright {
+    font-weight: var(--captionn);
+    font-size: var(--caption);
+    color: var(--light);
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+/* NOSOTROS */ 
+
+.nosotros__content {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--spacing2);
+    justify-content: space-between;
+    margin-top: var(--spacing6);
+}
+
+.nosotros__content__texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50rem;
+}
+
+.fotonosotros {
+    height: 40rem;
+    width: 50rem;
+}
+
+.nosotros__paragraph {
+    margin-bottom: var(--spacing5);
+    padding-top: var(--spacing6);
+}
+
+/* SERVICIOS */ 
+
+.sections__servicios {
+    display: flex;
+    flex-direction: column;
+}
+
+.fotoservicios {
+    height: 38rem;
+    width: 43rem;
+    padding-bottom: var(--spacing4);
+}
+
+.fotoserviciosreverse {
+    height: 38rem;
+    width: 43rem;
+    padding-bottom: var(--spacing5);
+}
+
+.servicios__item {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--spacing2);
+    justify-content: space-between;
+}
+
+.servicios__item__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: var(--spacing1);
+    justify-content: space-between;
+}
+
+.servicios__list {
+    margin-top: var(--spacing5);
+    width: 60rem;
+}
+
+.servicios__list__reverse {
+    margin-top: var(--spacing5);
+    width: 50rem;
+}
+
+.servicios__list li {
+    padding: 0.1rem;
+}
+
+
+/* CONTACTO */ 
+
+input {
+    border: solid 0.11em var(--medium);
+}
+
+textarea {
+    border: solid 0.11em var(--medium);
+}
+
+label {
+    font-size: var(--text);
+    font-weight: var(--linkss);
+}
+
+.datoncontacto {
+    font-size: var(--text);
+    font-weight: var(--linkss);
+}
+
+button { 
+    background-color: var(--secondary);
+    color: var(--light);
+    border: none;
+    width: 10em;
+    height: 2.5em;
+    border-radius: 9em;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+}
+
+
+/* NOVEDADES */ 
+
+.linkarticle {
+    background-color: var(--secondary);
+    color: var(--light);
+    padding: 0.8em 1.5em 0.8em 1.5em;
+    border-radius: 2em;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    text-decoration: none;
+}
