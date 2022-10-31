@@ -226,7 +226,7 @@ p {
     font-weight: var(--linkss);
     text-align: center;
     width: 20rem;
-    height: 12rem;
+    height: 13rem;
     padding: 0.8rem;
     border-radius: 0.8rem;
     margin-left: var(--spacing5);
@@ -242,7 +242,39 @@ p {
     font-weight: var(--linkss);
     text-align: center;
     width: 20rem;
-    height: 12rem;
+    height: 13rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin-left: var(--spacing5);
+    margin-right: var(--spacing5);
+    margin-bottom: var(--spacing2);
+}
+
+.serviciosblanco:hover { 
+    background-color: var(--light);
+    color: var(--secondary);
+    text-decoration: none;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    text-align: center;
+    width: 20rem;
+    height: 13rem;
+    padding: 0.8rem;
+    border-radius: 0.8rem;
+    margin-left: var(--spacing5);
+    margin-right: var(--spacing5);
+    margin-bottom: var(--spacing2);
+}
+
+.serviciosdorado:hover { 
+    background-color: var(--secondary);
+    color: var(--light);
+    text-decoration: none;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    text-align: center;
+    width: 20rem;
+    height: 13rem;
     padding: 0.8rem;
     border-radius: 0.8rem;
     margin-left: var(--spacing5);
@@ -423,4 +455,87 @@ button {
     font-size: var(--text);
     font-weight: var(--linkss);
     text-decoration: none;
+    margin: var(--spacing4) 0 var(--spacing4) 0;
+    display: block;
+    max-width: 15rem;
+    text-align: center;
+
+}
+
+.linkarticle:hover {
+    background-color: var(--secondary);
+    color: var(--light);
+    padding: 0.8em 1.5em 0.8em 1.5em;
+    border-radius: 2em;
+    font-size: var(--text);
+    font-weight: var(--linkss);
+    text-decoration: none;
+    margin: var(--spacing4) 0 var(--spacing4) 0;
+    display: block;
+    max-width: 15rem;
+    text-align: center;
+}
+
+.articletitle {
+    font-size: var(--heading6);
+    font-weight: var(--heading22);
+    margin: var(--spacing5) 0 0 0;
+}
+
+.articlefoto { 
+    height: 30rem;
+    width: 40rem;
+    margin: 0 0 var(--spacing2) 0;
+}
+
+.articlesection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.articlesection__reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.articlesubtitle {
+    margin: var(--spacing5) 0 0 0;
+}
+
+
+/* CONTACTO */ 
+
+.contactpage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+input {
+    display: block;
+    margin: var(--spacing6) 0 var(--spacing6) 0;
+    width: 35rem;
+    height: 2.5rem;
+}
+
+label {
+    display: block;
+    margin: var(--spacing6) 0 var(--spacing6) 0;
+}
+
+textarea {
+    width: 35rem;
+    height: 25rem;
+}
+
+.enviarconsulta { 
+    display: block;
+    margin: var(--spacing4) 0 var(--spacing2) 0;
+}
+
+.datoscontacto {
+    margin-top: var(--spacing1);
+    margin-bottom: var(--spacing2);
 }
